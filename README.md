@@ -72,28 +72,36 @@ scikit-learn
 Data Loading and Preprocessing:
 You began by uploading the dataset (using screenshots of code or relevant parts) and performing initial data exploration. This likely involved checking for missing values, understanding data types, and getting familiar with the variables.
 Exploratory Data Analysis (EDA) Using Pair Plot:
-You used a pair plot to visualize the relationships between different numerical variables, with color coding for categorical variables like "smoker."
+
+1.You used a pair plot to visualize the relationships between different numerical variables, with color coding for categorical variables like "smoker."
 The pair plot provided insights into the correlation patterns, distribution of variables, and possible group differences (e.g., how "smoker" affects the "tip" or "total_bill").
-Linearity Check Using the Rainbow Test:
+
+2.Linearity Check Using the Rainbow Test:
 You applied the Rainbow Test to check if there was linearity between the dependent variable (like "tip" or "total_bill") and other independent variables.
 The Rainbow Test helps determine if a linear model is suitable for the data by testing for a linear relationship, allowing you to confirm or reject linearity assumptions.
-Correlation Analysis with a Heatmap:
+
+3.Correlation Analysis with a Heatmap:
 You used a heatmap to analyze the correlations between numerical variables.
 The heatmap provided a visual representation of the correlation coefficients, helping identify highly correlated variables. This information is useful in understanding which variables might have a strong influence on the target variable or could cause multicollinearity issues in regression models.
-Applying Various Regression Models:
+
+4.Applying Various Regression Models:
 You applied multiple regression models, including:
 Linear Regression (basic regression model),
 Ridge Regression and Lasso Regression (regularized linear models),
 Decision Tree Regression and Random Forest Regression (tree-based models),
 Support Vector Regression (using different kernels), and
 K-Nearest Neighbors Regression.
+
 For each model, you trained it on the data and evaluated its performance using the R² score on the test set. The R² score measures how well the model explains the variance in the target variable.
-Selecting the Model with the Highest R² Score:
+
+5.Selecting the Model with the Highest R² Score:
 After evaluating all models, you identified the model with the highest R² score, indicating it had the best predictive performance on the test data.
-Hyperparameter Tuning Using Grid Search CV:
+
+6.Hyperparameter Tuning Using Grid Search CV:
 To further improve model performance, you fine-tuned the model with the highest R² score using GridSearchCV, a cross-validation-based hyperparameter tuning method.
 GridSearchCV systematically tested combinations of hyperparameters to find the optimal configuration for each model.
 After tuning, you re-evaluated the best model on the test data to confirm that the optimized parameters improved the R² score.
+
 Summary of Optimized Results:
 You compiled the final results into a DataFrame, showing the best hyperparameters and R² scores for each model.
 This allowed for easy comparison and provided a comprehensive view of model performance, from initial trials to fine-tuned versions.
